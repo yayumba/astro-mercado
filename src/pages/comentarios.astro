@@ -1,0 +1,197 @@
+---
+import Layout from "../componentes/layout.astro"
+---
+
+<Layout>
+    
+</Layout>
+<title>Comentarios</title>
+<nav>
+    <div class="mercado">MERCADOS EL PORVENIR</div>
+    <a href="http://localhost:4321/" class="cerrarsecion">cerrar secion</a>
+</nav>
+<section>
+    <h2>COMENTARIOS</h2>
+     <div class="comentario">
+         <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem id vel quod error repellendus expedita beatae facere laborum. Repellat nihil, velit error fuga aperiam consequatur corporis incidunt saepe laudantium, tenetur reprehenderit, harum omnis dolorum quae ipsa cum nam? Voluptates sed nesciunt modi obcaecati ipsum repudiandae dolorum, voluptate beatae culpa nobis. ipsum dolor sit, amet consectetur adipisicing elit. Quod, rerum alias neque mollitia deleniti, dolore repellendus, minus quae officiis facilis exercitationem eos sed commodi nobis dicta illum ratione culpa eum?
+         </p>
+       </div>
+       <div class="correo">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+       </div>
+       <div class="boton">
+         <input type="submit" value="ELIMINAR">
+     </div>
+</section>
+<section>
+    <div class="comentario2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem id vel quod error repellendus expedita beatae facere laborum. Repellat nihil, velit error fuga aperiam consequatur corporis incidunt saepe laudantium, tenetur reprehenderit, harum omnis dolorum quae ipsa cum nam? Voluptates sed nesciunt modi obcaecati ipsum repudiandae dolorum, voluptate beatae culpa nobis. ipsum dolor sit, amet consectetur adipisicing elit. Quod, rerum alias neque mollitia deleniti, dolore repellendus, minus quae officiis facilis exercitationem eos sed commodi nobis dicta illum ratione culpa eum?
+        </p>
+      </div>
+      <div class="correo2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </div>
+      <div class="boton2">
+        <input type="submit" value="ELIMINAR">
+    </div>
+</section>
+<section>
+    <div class="comentario3">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem id vel quod error repellendus expedita beatae facere laborum. Repellat nihil, velit error fuga aperiam consequatur corporis incidunt saepe laudantium, tenetur reprehenderit, harum omnis dolorum quae ipsa cum nam? Voluptates sed nesciunt modi obcaecati ipsum repudiandae dolorum, voluptate beatae culpa nobis. ipsum dolor sit, amet consectetur adipisicing elit. Quod, rerum alias neque mollitia deleniti, dolore repellendus, minus quae officiis facilis exercitationem eos sed commodi nobis dicta illum ratione culpa eum?
+        </p>
+      </div>
+      <div class="correo3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      </div>
+      <div class="boton3">
+        <input type="submit" value="ELIMINAR">
+    </div>
+</section>
+<style>
+    nav{
+        grid-template-columns:auto;
+        grid-template-rows: auto;
+        grid-template-columns: 5;
+        grid-template-rows: 1;
+        display: grid;
+        background-color: #026773;
+    }
+    .mercado{
+        grid-row: 1;
+        grid-column: 1/4;
+        text-align: center; 
+        color:#F2E3D5 ;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: arial,sans-serif;
+    }
+    a{
+        grid-row: 1;
+        grid-column: 4;
+        text-align: center; 
+        color:#F2E3D5 ;
+        font-size: 20px;
+        background-color: #3CA6A6;
+        border-radius: 7px;
+        padding-top: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 100px;
+        margin-right: 50px;
+    }
+    section{
+    background-color:#012E40 ;
+    font-size: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    padding: 10px 20px 20px 20px;
+    }
+    .comentario{
+    background-color: #024959;
+    padding: 10px 20px 10px 20px;
+    grid-column:1/3;
+    grid-row: 2/4; 
+    font-family: "Arial", sans-serif;
+    font-size: 20px; 
+    text-align: justify;
+    color:#F2E3D5 ;
+    font-weight: bold;
+}
+.correo{
+    background-color: #026773;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    font-family: "Arial", sans-serif;
+    font-size: 20px; 
+    text-align: center;
+    color:#F2E3D5 ;
+    font-weight: bold;
+}
+.boton{
+    grid-column: 3/4;
+    grid-row: 3;
+    font-family: "Arial", sans-serif;
+    align-items: center;
+    color: #012E40;
+}
+.comentario2{
+    background-color:#024959;
+    padding: 10px 20px 10px 20px;
+    grid-column:1/3;
+    grid-row: 1/3; 
+    font-family: "Arial", sans-serif;
+    font-size: 20px; 
+    text-align: justify;
+    color:#F2E3D5 ;
+    font-weight: bold;
+}
+.correo2{
+    background-color: #026773;
+    grid-column: 3/4;
+    grid-row: 1;
+    font-family: "Arial", sans-serif;
+    font-size: 20px; 
+    text-align: center;
+    color:#F2E3D5 ;
+    font-weight: bold;
+}
+.boton2{
+    grid-column: 3/4;
+    grid-row: 2;
+    font-family: "Arial", sans-serif;
+    align-items: center;
+    color: #012E40;
+}
+.comentario3{
+    background-color: #024959;
+    padding: 10px 20px 10px 20px;
+    grid-column:1/3;
+    grid-row: 1/3; 
+    font-family: "Arial", sans-serif;
+    font-size: 20px; 
+    text-align: justify;
+    color:#F2E3D5 ;
+    font-weight: bold;
+}
+.correo3{
+    background-color: #026773;
+    grid-column: 3/4;
+    grid-row: 1;
+    font-family: "Arial", sans-serif;
+    font-size: 20px; 
+    text-align: center;
+    color:#F2E3D5 ;
+    font-weight: bold;
+}
+.boton3{
+    grid-column: 3/4;
+    grid-row: 2;
+    font-family: "Arial", sans-serif;
+    align-items: center;
+    color: #012E40;
+}
+input{
+    font-family: "Arial", sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 30px; 
+    background-color: #F2E3D5;
+}
+h2{
+    background-color:#F2E3D5;
+    grid-column: 1/-1 ; 
+    grid-row: 1;
+    padding: 20px 10px 10px 50px;
+    font-family: "Arial", sans-serif;
+    color: #026773;
+    text-align: center;
+    align-items: center;
+    width: 89%;
+    margin-left: 20px;
+}
+</style>
